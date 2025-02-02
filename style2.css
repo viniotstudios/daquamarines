@@ -50,5 +50,5 @@ body {
     }
 
         .gallery img:hover {
-            transform: scale(1.2); /* Increase size on hover */
+            transform: scale(2); /* Increase size on hover */
         }
