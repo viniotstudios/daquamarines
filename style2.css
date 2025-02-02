@@ -14,6 +14,7 @@ body {
     background-color: #004080;
     padding: 10px 20px;
     color: white;
+    position: relative;
 }
 
 .logo {
@@ -25,6 +26,7 @@ body {
     color: white;
     text-decoration: none;
     margin-left: 15px;
+    position: relative;
 }
 
     .nav a:hover {
@@ -52,3 +54,21 @@ body {
         .gallery img:hover {
             transform: scale(2); /* Increase size on hover */
         }
+
+.biobox-link::after {
+    content: url('BioBox/image4.jpg'); /* Replace with the correct image path */
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    width: 200px; /* Adjust as needed */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.biobox-link:hover::after {
+    display: block;
+}
