@@ -18,15 +18,15 @@
     <div class="gallery" id="gallery"></div>
     <script>
         const folderPath = 'BioBox';
-        const imageCount = 21; // Adjust the number of images as needed
+        const imageOrder = [15, 16, 14, 1, 2, 3, 17, 18, 19, 20, 7, 8, 10, 11, 9, 4, 5, 6, 13, 12, 21];
         const gallery = document.getElementById('gallery');
 
-        for (let i = 1; i <= imageCount; i++) {
+        imageOrder.forEach(i => {
             const img = document.createElement('img');
             img.src = `${folderPath}/Image${i}.jpg`;
             img.alt = `Image ${i}`;
             gallery.appendChild(img);
-        }
+        });
     </script>
 </body>
 </html>
